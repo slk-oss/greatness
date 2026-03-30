@@ -5,3 +5,4 @@ DerivedData/
 *.xcuserstate
 project.xcworkspace/xcshareddata/
 .swiftpm/
+project.xcworkspace/
