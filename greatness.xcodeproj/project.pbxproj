@@ -29,9 +29,33 @@
 		5B163FB42F7A84620005C493 /* greatnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greatnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5B40A0FF2F7B156200BBF806 /* Exceptions for "greatness" folder in "greatness" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				.gitignore,
+			);
+			target = 5B163F9C2F7A84600005C493 /* greatness */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		5B40A1002F7B156200BBF806 /* Exceptions for "greatness" folder in "Compile Sources" phase from "greatness" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 5B163F992F7A84600005C493 /* Sources */;
+			membershipExceptions = (
+				.gitignore,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5B163F9F2F7A84600005C493 /* greatness */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5B40A0FF2F7B156200BBF806 /* Exceptions for "greatness" folder in "greatness" target */,
+				5B40A1002F7B156200BBF806 /* Exceptions for "greatness" folder in "Compile Sources" phase from "greatness" target */,
+			);
 			path = greatness;
 			sourceTree = "<group>";
 		};
