@@ -7,15 +7,28 @@
 
 import SwiftUI
 
+enum AppScreen {
+    case welcome
+    case survey
+    // case analysis 
+}
+
 struct ContentView: View {
+    @State private var screen: AppScreen = .welcome
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        switch screen {
+        case .welcome:
+            WelcomeView {
+                withAnimation {
+                    screen = .survey
+                }
+            }
+        case .survey:
+            SurveyView { survey in
+                print("Survey done:", survey)
+            }
         }
-        .padding()
     }
 }
 
