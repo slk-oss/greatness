@@ -259,7 +259,7 @@ struct StepStateView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
-            SurveyTitle("Как ты сейчас?")
+            SurveyTitle("Что происходит внутри?")
 
             SurveyScaleRow(
                 title: "Уровень энергии",
