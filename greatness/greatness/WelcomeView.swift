@@ -59,7 +59,7 @@ struct WelcomeView: View {
                 Button(action: onStart) {
                     Text("Начать путь")
                         .font(.system(size: 17, weight: .semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Color(.systemBackground))
                         .frame(maxWidth: .infinity)
                         .frame(height: 54)
                         .background(Color.primary)

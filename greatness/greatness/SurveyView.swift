@@ -1,5 +1,5 @@
 //
-//  SurveryView.swift
+//  SurveyView.swift
 //  greatness
 //
 //  Created by Сулейман Курбанов on 31.03.2026.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 import Combine
-
 // MARK: - Model
 
-struct UserSurvey {
+struct UserSurvey: Codable { 
+    var name: String = ""
     // Ресурсы
     var hasStudy: Bool? = nil
     var hasWork: Bool? = nil
@@ -111,7 +111,7 @@ struct SurveyView: View {
                     }
                 }
                 .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(.white)
+                .foregroundStyle(Color(.systemBackground))
                 .frame(height: 54)
                 .frame(maxWidth: .infinity)
                 .background(Color.primary)

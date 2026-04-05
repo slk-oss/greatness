@@ -173,7 +173,7 @@ struct AnalysisEngine {
     private static func buildScore(_ s: UserSurvey) -> Int {
         var score = 50
 
-        // Энергия (макс +15)
+        // Энергия (макс +10)
         score += (s.energyLevel - 3) * 5
 
         // Сон
@@ -262,7 +262,7 @@ struct AnalysisView: View {
                 Button(action: onContinue) {
                     Text("Получить 10-дневный план")
                         .font(.system(size: 17, weight: .semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(Color(.systemBackground))
                         .frame(maxWidth: .infinity)
                         .frame(height: 54)
                         .background(Color.primary)

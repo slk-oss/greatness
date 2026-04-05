@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-
 // MARK: - Models
 
 struct DayPlan: Identifiable {
@@ -136,7 +135,7 @@ struct PlanView: View {
             Button(action: onContinue) {
                 Text("Начать выполнение")
                     .font(.system(size: 17, weight: .semibold))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(Color(.systemBackground))
                     .frame(maxWidth: .infinity)
                     .frame(height: 54)
                     .background(Color.primary)
